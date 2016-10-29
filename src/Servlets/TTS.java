@@ -41,10 +41,12 @@ public class TTS extends HttpServlet {
 		
 		
 
-		if( request.getSession().getAttribute( "userid" ) == null ) {
-            response.sendRedirect( "Login" );
-            return;
-        }
+		
+		
+		
+		
+		
+		request.getRequestDispatcher("/WEB-INF/MainPage.jsp").forward(request, response);
 		
 		
 		

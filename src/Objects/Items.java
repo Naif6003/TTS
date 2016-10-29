@@ -5,15 +5,15 @@ public class Items {
 	int item_id;
 	String item_name;
 	String item_description;
-	Boolean item_exist;
+
 	
 	
-	public Items(int item_id, String item_name, String item_description, Boolean item_exist) {
-		super();
+	public Items(int item_id, String item_name, String item_description) {
+	
 		this.item_id = item_id;
 		this.item_name = item_name;
 		this.item_description = item_description;
-		this.item_exist = item_exist;
+		
 	}
 	
 	
@@ -34,11 +34,5 @@ public class Items {
 	}
 	public void setItem_description(String item_description) {
 		this.item_description = item_description;
-	}
-	public Boolean getItem_exist() {
-		return item_exist;
-	}
-	public void setItem_exist(Boolean item_exist) {
-		this.item_exist = item_exist;
 	}
 }

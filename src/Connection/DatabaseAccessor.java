@@ -9,13 +9,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Objects.Items;
+import Objects.User;
 
 public class DatabaseAccessor {
 	
 	
 	public static final String LIST_ITEMS_QUERY = "select * from trading_items";
     public static final String LIST_DISHESINMENU_QUERY = "select d.id as 'dish_id', d.name, i.id as 'ingredient_id', i.ingredient_name, i.price, di.quantity from dishes d join dish_ingredients di on d.id=di.dishes_id join ingredients i on di.ingredient_id=i.id where d.menu_id = ?";
-    public static final String LIST_INGREDIENTS_QUERY = "select * from ingredients";
+    public static final String LIST_User_QUERY = "select * from users";
     public static final String LIST_A_DISH = "select id from dishes where name = ?";
     
     
@@ -33,11 +34,11 @@ public class DatabaseAccessor {
             while (rs.next()) {
            
                 int itemsId = rs.getInt("id");
-                String menuName = rs.getString("item_name");
+                String itemName = rs.getString("item_name");
                 String description = rs.getString("description");
                 
                 
-                items.add(new Items(itemsId, menuName, description));
+                items.add(new Items(itemsId, itemName, description));
             }
         
         } catch (SQLException e) {
@@ -54,6 +55,46 @@ public class DatabaseAccessor {
             }
         }
         return items;
+    }
+    
+    
+    public static List<User> getUser() throws SQLException {
+        Connection c = null;
+        
+        List<User> user = new ArrayList<User>();
+      
+        try {
+        
+        	c = ConnectionUtils.getMySQLConnection(DatabaseConfig.MYSQL_USERNAME, DatabaseConfig.MYSQL_PASSWORD,
+                    DatabaseConfig.MYSQL_HOST, DatabaseConfig.MYSQL_PORT, DatabaseConfig.MYSQL_DATABASE_TO_USE);
+            PreparedStatement stmt = c.prepareStatement(LIST_User_QUERY);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+           
+                int userId = rs.getInt("id");
+                String userName = rs.getString("user_name");
+                String userEmail = rs.getString("user_email");
+                String userAddress = rs.getString("user_address");
+                String userPassword = rs.getString("user_password");
+                
+                
+                user.add(new User(userId, userName, userEmail,userAddress,userPassword));
+            }
+        
+        } catch (SQLException e) {
+            // Escalate to Server error
+            throw e;
+        }
+        // Always close connections, no matter what happened
+        finally {
+            try {
+                if (c != null)
+                    c.close();
+            } catch (SQLException e) {
+                throw e;
+            }
+        }
+        return user;
     }
 //    public static List<Ingredients> getIngredients() throws SQLException {
 //        Connection c = null;

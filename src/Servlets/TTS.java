@@ -3,7 +3,6 @@ package Servlets;
 import java.io.IOException;
 
 import javax.servlet.ServletConfig;
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -34,21 +33,9 @@ public class TTS extends HttpServlet {
 		
 	}
 
-
-
-
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		
-
-		
-		
-		
-		
-		
 		request.getRequestDispatcher("/WEB-INF/MainPage.jsp").forward(request, response);
-		
-		
 		
 	}
 

@@ -24,6 +24,10 @@ local.properties
 .loadpath
 .recommenders
 
+.DS_Store
+!WebContent/WEB-INF/lib/mysql-connector-java-5.1.40-bin (1).jar
+
+
 # Eclipse Core
 .project
 

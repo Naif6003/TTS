@@ -57,22 +57,22 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-click" href="#services">Services</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Trade</a>
+                        <a class="page-click" href="#portfolio">Trade</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#buying_selling">Buy, Sell</a>
+                        <a class="page-click" href="#buying_selling">Buy, Sell</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-click" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">Team</a>
+                        <a class="page-click" href="#team">Team</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Login</a>
+                        <a class="page-click" href="#contact">Login</a>
                     </li>
                 </ul>
             </div>

@@ -75,7 +75,7 @@
                         <a class="page-click" href="Team">Team</a>
                     </li>
                     <li>
-                        <a class="page-click" href="Login">Login</a>
+                        <a class="page-click" href="TheLogin">Login</a>
                     </li>
                 </ul>
             </div>

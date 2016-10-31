@@ -72,7 +72,7 @@
                         <a class="page-click" href="#team">Team</a>
                     </li>
                     <li>
-                        <a class="page-click" href="Login">Login</a>
+                        <a class="page-click" href="TheLogin">Login</a>
                     </li>
                 </ul>
             </div>
@@ -97,7 +97,7 @@
                 
                 
                 
-                    <form  action="Login" method="post" >
+                    <form  action="TheLogin" method="post" >
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">

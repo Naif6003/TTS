@@ -21,6 +21,7 @@ public class TTS extends HttpServlet {
 	public void init(ServletConfig config) throws ServletException {
 		
 		try {
+			
 			Class.forName("com.mysql.jdbc.Driver");
 			
 			

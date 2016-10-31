@@ -28,7 +28,7 @@ public class TheLogin extends HttpServlet {
 
 		
 		
-		request.getRequestDispatcher("/WEB-INF/Login.jsp").forward(request, response);
+		request.getRequestDispatcher("/WEB-INF/TheLogin.jsp").forward(request, response);
 	}
 
 

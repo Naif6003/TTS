@@ -4,10 +4,11 @@ public class User {
 
 	
 	int userId;
-	String userName;
+	public String userName;
 	String userEmail;
 	String userAddress;
-	String userPassword;
+	public String userPassword;
+	
 	
 	
 	public User(int userId, String userName, String userEmail, String userAddress, String userPassword) {

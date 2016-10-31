@@ -35,7 +35,20 @@ public class TheLogin extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
-		  String username = req.getParameter("username");
+	
+		
+		try {
+			
+			Class.forName("com.mysql.jdbc.Driver");
+			
+		} catch (ClassNotFoundException e) {
+			
+			throw new ServletException(e);
+			
+		}
+		
+		
+		   String username = req.getParameter("name");
 	        String password = req.getParameter("password");
 	        
 	        Connection c = null;
@@ -47,15 +60,17 @@ public class TheLogin extends HttpServlet {
 	            
 	            boolean foundUser = false;
 	         
-		        if(user.getUserName().equals(username) && user.getUserPassword().equals(password)){
+		        if(user.userName.equals(username) && user.userPassword.equals(password)){
 		               
-		               
+		        	foundUser=true;
 		                //store userid and username in session for future lookup
 		                req.getSession().setAttribute( "userid", user.getUserId());
 		                req.getSession().setAttribute("username", user.getUserName());
+		                req.getSession().setAttribute("foundUser", foundUser);
 		                //request.getSession().setAttribute("message", message);
 		                resp.sendRedirect("TTS");
-		                foundUser=true;
+		                
+		                
 		                return;
 		            }
 	            		        

@@ -74,8 +74,17 @@
                     <li>
                         <a class="page-click" href="Team">Team</a>
                     </li>
+                    
+                    
                     <li>
-                        <a class="page-click" href="TheLogin">Login</a>
+                    <c:choose>
+            <c:when test="${sessionScope.foundUser}"> 
+                 <a class="page-click" href="Logout">Logout</a>
+                </c:when>
+                <c:otherwise>
+                 <a class="page-click" href="TheLogin">Login</a>
+                </c:otherwise>
+                </c:choose>
                     </li>
                 </ul>
             </div>
@@ -88,7 +97,15 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Hello There! We are</div>
+            <c:choose>
+            <c:when test="${sessionScope.foundUser}"> 
+                <div class="intro-lead-in">Hello ${sessionScope.username}! We are</div>
+                </c:when>
+                <c:otherwise>
+                <div class="intro-lead-in">Hello there! We are</div>
+                </c:otherwise>
+                </c:choose>
+                
                 <div class="intro-heading">Trusted Trading Services</div>
                 <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
             </div>

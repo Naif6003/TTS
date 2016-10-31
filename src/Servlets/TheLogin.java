@@ -37,15 +37,16 @@ public class TheLogin extends HttpServlet {
 		
 		  String username = req.getParameter("username");
 	        String password = req.getParameter("password");
+	        
 	        Connection c = null;
-	        List<User> users = null;
+	        User user = null;
 
 	        try {
 
-	            users = DatabaseAccessor.getUser(username, password);
+	            user = DatabaseAccessor.getUser(username, password);
 	            
 	            boolean foundUser = false;
-	            for(User user: users){
+	         
 		        if(user.getUserName().equals(username) && user.getUserPassword().equals(password)){
 		               
 		               
@@ -57,16 +58,13 @@ public class TheLogin extends HttpServlet {
 		                foundUser=true;
 		                return;
 		            }
-	            }
-		        
+	            		        
 		        if(!foundUser){
 		            //User not found
 		            System.out.println("user not found");
 		            resp.sendRedirect("Login?message=username%20and%20password%20combination%20not%20found");
 		        }
-		        
-	            }
-
+	        }
 	         catch (SQLException e) {
 	            // Escalate to Server error
 	            throw new ServletException(e);

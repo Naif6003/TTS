@@ -59,10 +59,10 @@ public class DatabaseAccessor {
     }
     
     
-    public static List<User> getUser(String username, String password) throws SQLException {
+    public static User getUser(String username, String password) throws SQLException {
         Connection c = null;
         
-        List<User> user = null;
+        User user = null;
       
         try {
         	 
@@ -83,7 +83,7 @@ public class DatabaseAccessor {
                 String userPassword = rs.getString("user_password");
                 
                 
-                user.add(new User(userId, userName, userEmail,userAddress,userPassword));
+                user = new User(userId, userName, userEmail,userAddress,userPassword);
             }
         
             

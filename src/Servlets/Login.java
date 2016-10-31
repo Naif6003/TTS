@@ -61,8 +61,10 @@ public class Login extends HttpServlet {
 	        }
 	            
 	        boolean foundUser = false;
+	        
 	        if(user.getUserName().equals(username) && user.getUserPassword().equals(password)){
-	                foundUser=true;
+	              
+	        	foundUser=true;
 	                String message = "";
 	                //store userid and username in session for future lookup
 	                req.getSession().setAttribute( "userid", user.getUserId());

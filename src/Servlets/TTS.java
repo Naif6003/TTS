@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/TTS")
+@WebServlet(urlPatterns="/TTS")
 public class TTS extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -29,10 +29,6 @@ public class TTS extends HttpServlet {
 			throw new ServletException(e);
 			
 		}
-		
-		
-		
-		
 		
 	}
 

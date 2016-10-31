@@ -17,8 +17,8 @@ import Objects.User;
 /**
  * Servlet implementation class Login
  */
-@WebServlet(urlPatterns="/Login")
-public class Login extends HttpServlet {
+@WebServlet(urlPatterns="/TheLogin")
+public class TheLogin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
    

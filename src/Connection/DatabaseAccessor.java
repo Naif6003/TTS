@@ -16,8 +16,9 @@ public class DatabaseAccessor {
 	
 	public static final String LIST_ITEMS_QUERY = "select * from trading_items";
     public static final String LIST_DISHESINMENU_QUERY = "select d.id as 'dish_id', d.name, i.id as 'ingredient_id', i.ingredient_name, i.price, di.quantity from dishes d join dish_ingredients di on d.id=di.dishes_id join ingredients i on di.ingredient_id=i.id where d.menu_id = ?";
+    public static final String LIST_User_QUERY = "select * from users";
     public static final String LIST_A_DISH = "select id from dishes where name = ?";
-    public static final String LIST_A_USER_QUERY = "select * from users where username = ? and user_password = ?";
+    
     
     public static List<Items> getMenus() throws SQLException {
         Connection c = null;
@@ -57,29 +58,27 @@ public class DatabaseAccessor {
     }
     
     
-    public static User getUser(String username, String password) throws SQLException {
+    public static List<User> getUser() throws SQLException {
         Connection c = null;
         
-        User user = null;
+        List<User> user = new ArrayList<User>();
       
         try {
         
-            c = ConnectionUtils.getMySQLConnection(DatabaseConfig.MYSQL_USERNAME, DatabaseConfig.MYSQL_PASSWORD,
+        	c = ConnectionUtils.getMySQLConnection(DatabaseConfig.MYSQL_USERNAME, DatabaseConfig.MYSQL_PASSWORD,
                     DatabaseConfig.MYSQL_HOST, DatabaseConfig.MYSQL_PORT, DatabaseConfig.MYSQL_DATABASE_TO_USE);
-            PreparedStatement stmt = c.prepareStatement(LIST_A_USER_QUERY);
-            stmt.setString( 1, username);
-            stmt.setString( 2, password);
+            PreparedStatement stmt = c.prepareStatement(LIST_User_QUERY);
             ResultSet rs = stmt.executeQuery();
             while (rs.next()) {
            
                 int userId = rs.getInt("id");
-                String userName = rs.getString("username");
+                String userName = rs.getString("user_name");
                 String userEmail = rs.getString("user_email");
                 String userAddress = rs.getString("user_address");
                 String userPassword = rs.getString("user_password");
                 
                 
-                user = new User(userId, userName, userEmail,userAddress,userPassword);
+                user.add(new User(userId, userName, userEmail,userAddress,userPassword));
             }
         
         } catch (SQLException e) {

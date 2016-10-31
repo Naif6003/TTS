@@ -18,11 +18,30 @@ public class Login extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		
-		
-		
+
 		
 		
 		request.getRequestDispatcher("/WEB-INF/Login.jsp").forward(request, response);
 	}
+
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
+		
+		
+		String username = req.getParameter("name");
+		
+		String password = req.getParameter("password");
+		
+		
+		System.out.println(username);
+
+		resp.sendRedirect("TTS");
+		
+		
+		
+	}
+	
 
 }

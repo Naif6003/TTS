@@ -1,10 +1,18 @@
 package Objects;
 
+
 public class Items {
 	int itemId;
 	String itemName;
 	String itemDescription;
-
+	User user;
+	
+	public Items(int itemId, String itemName, String itemDescription, User user) {
+		this.itemId = itemId;
+		this.itemName = itemName;
+		this.itemDescription = itemDescription;
+		this.user = user;
+	}
 	public Items(int itemId, String itemName, String itemDescription) {
 		this.itemId = itemId;
 		this.itemName = itemName;

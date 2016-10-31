@@ -84,12 +84,12 @@
    
     
  <!-- Contact Section -->
-    <section id="contact">
+    <section   id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading"> Login </h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 align="left" class=" section-heading"> Login </h2>
+                    <h3 align="left" class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
             </div>
             <div class="row">
@@ -98,7 +98,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input name="name" type="text" class="form-control" placeholder="Your Name *" id="name"  required  data-validation-required-message="Please enter your name.">
+                                    <input  name="name" type="text" class="form-control" placeholder="Your Name *" id="name"  required  data-validation-required-message="Please enter your name.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">

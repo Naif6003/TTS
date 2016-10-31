@@ -7,8 +7,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-    <meta charset="utf-8">
+<meta charset="utf-8">
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,18 +38,17 @@
 
 
 </head>
-
 <body id="page-top" class="index">
 
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+ <!-- Navigation -->
+    <nav id="mainNav" class="">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
+            <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    <span class="">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Trusted Trading Service</a>
+                <a class="navbar-brand" href="#page-top">Trusted Trading Service</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -88,7 +86,7 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <!-- Header -->
+    <%-- <!-- Header -->
     <header>
         <div class="container">
             <div class="intro-text">
@@ -104,7 +102,48 @@
                 <a href="Services" class="page-click btn btn-xl">Tell Me More</a>
             </div>
         </div>
-    </header>
+    </header> --%>
+
+	
+	
+	<!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Services</h2>
+                    <h3 class="section-subheading text-muted">We are Trusted Trading Services</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Purchase and Sell your Personal Goods</h4>
+                    <p class="text-muted">Buy and Sell items from rare to vintage inventory directly from Users and we will have it shipped to our warehouse for inspection and verification as stated on the item listing.   </p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Trading Goods</h4>
+                    <p class="text-muted">We would like to create a market of goods to trade for users and have users networks with each other.  Our inspectors will verify the goods as stated in the item listing</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Web Security</h4>
+                    <p class="text-muted">We care connected with a 3rd party that handles purhcases for protection for your needs using your debit card, credit card or trasfering money from your bank account </p>
+                </div>
+            </div>
+        </div>
+    </section>
+	
 
 
     <!-- jQuery -->

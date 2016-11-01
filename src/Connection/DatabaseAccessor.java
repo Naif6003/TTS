@@ -205,8 +205,13 @@ public class DatabaseAccessor {
                 String itemName = rs.getString("item_name");
                 String description = rs.getString("description");
                 int userId = rs.getInt("user_id");
+                String username = rs.getString("username");
+                String email = rs.getString("user_email");
+                String address = rs.getString("user_address");
+                String password = rs.getString("user_password");
                 
-                items.add(new Items(itemsId, itemName, description, userId));
+                
+                items.add(new Items(itemsId, itemName, description, new User(userId, username, email, address, password)));
             }
         
         } catch (SQLException e) {

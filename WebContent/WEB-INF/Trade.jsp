@@ -96,6 +96,7 @@
                 </div>
             </div>
             <div class="row">
+            <c:forEach items="${items}" var="item">
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -103,14 +104,15 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="bootstrap/img/portfolio/roundicons.png" class="img-responsive" alt="">
+                        <img src="bootstrap/img/portfolio/${item.itemName}.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Round Icons</h4>
-                        <p class="text-muted">Graphic Design</p>
+                        <h4><c:out value="${item.itemName}"/></h4>
+                        <p class="text-muted"><c:out value="${item.itemId}"/></p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
+               </c:forEach>
+                <!-- <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -151,8 +153,8 @@
                         <h4>Golden</h4>
                         <p class="text-muted">Website Design</p>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                </div> -->
+              <!--   <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -179,7 +181,7 @@
                         <h4>Dreams</h4>
                         <p class="text-muted">Website Design</p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>

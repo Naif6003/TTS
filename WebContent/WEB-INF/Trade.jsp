@@ -108,7 +108,7 @@
                     </a>
                     <div class="portfolio-caption">
                         <h4><c:out value="${item.itemName}"/></h4>
-                        <p class="text-muted"><c:out value="${item.itemId}"/></p>
+                
                     </div>
                 </div>
                </c:forEach>

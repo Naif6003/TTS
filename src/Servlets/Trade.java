@@ -32,7 +32,6 @@ public class Trade extends HttpServlet {
 		List<Items> items = null;
 	
 		int currentUserId = (int) request.getSession().getAttribute("userid");
-		System.out.println(currentUserId);
 		
 		try {
 	

@@ -5,7 +5,8 @@ public class Items {
 	int itemId;
 	String itemName;
 	String itemDescription;
-	User user;
+	public User user;
+	public int userId;
 	
 	public Items(int itemId, String itemName, String itemDescription, User user) {
 		this.itemId = itemId;
@@ -13,10 +14,11 @@ public class Items {
 		this.itemDescription = itemDescription;
 		this.user = user;
 	}
-	public Items(int itemId, String itemName, String itemDescription) {
+	public Items(int itemId, String itemName, String itemDescription, int userId) {
 		this.itemId = itemId;
 		this.itemName = itemName;
 		this.itemDescription = itemDescription;
+		this.userId = userId;
 	}
 
 	

@@ -3,7 +3,7 @@ package Objects;
 public class User {
 
 	
-	int userId;
+	public int userId;
 	public String userName;
 	String userEmail;
 	String userAddress;

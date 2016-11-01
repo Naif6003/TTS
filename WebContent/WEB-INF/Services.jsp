@@ -48,7 +48,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#page-top">Trusted Trading Service</a>
+                <a class="navbar-brand" href="TTS">Trusted Trading Service</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -73,6 +73,9 @@
                     <c:choose>
             <c:when test="${sessionScope.foundUser}"> 
                  <a class="page-click" href="Logout">Logout</a>
+                 <li>
+                        <a class="page-click" href="ShoppingCart">Shopping Cart</a>
+                    </li>
                 </c:when>
                 <c:otherwise>
                  <a class="page-click" href="TheLogin">Login</a>
@@ -148,7 +151,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2016</span>
+                    <span class="copyright">Copyright &copy; TTS 2016</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">

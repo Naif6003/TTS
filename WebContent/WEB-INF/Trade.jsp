@@ -99,9 +99,9 @@
                 </div>
             </div>
             <div class="row">
-            <c:forEach items="${items}" var="item">
+            <c:forEach items="${items}" var="item" varStatus="loop">
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal${loop.index}" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -125,7 +125,8 @@
 
 
 <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+<c:forEach items="${items}" var="item" varStatus="loop">
+    <div class="portfolio-modal modal fade" id="portfolioModal${loop.index}" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -139,7 +140,7 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Item number 1</h2>
+                                <h2>Item number ${loop.index}</h2>
                                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                 <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
                                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
@@ -150,6 +151,11 @@
                                     <li>Client: Round Icons</li>
                                     <li>Category: Graphic Design</li>
                                 </ul>
+                                <%-- <form action="OfferTrade" method="get">
+                                <input type="hidden" name="owner" value="${item.user.userId}">
+                                <button type="button" class="btn btn-primary"><i class="fa fa-times"></i> Make an offer</button>
+                                </form> --%>
+                                <a class="page-click" href="OfferTrade?id=${item.itemId}"> Make an offer</a>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
                         </div>
@@ -158,7 +164,7 @@
             </div>
         </div>
     </div>
-
+</c:forEach>
 
 
 <footer>

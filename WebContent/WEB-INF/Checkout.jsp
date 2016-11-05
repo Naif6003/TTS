@@ -110,14 +110,14 @@
       		<div class="block">
                 <div class="navbar navbar-inner block-header">
                     <div class="muted pull-left">My Cart</div>
-                    <div class="pull-right"><span class="muted">small message</span></div>
+              <!--    <div class="pull-right"><span class="muted">small message</span></div> -->
                 </div>
                 <div class="block-content collapse in">
                     <div class="span12">
-                    	<div class="alert alert-warning">
+                    	<!-- <div class="alert alert-warning">
                     		<h4>Warning!</h4>
                     		<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    	</div>
+                    	</div> -->
                         <table class="table table-striped table-hover">
                         	<tr>
                         		<th>Image</th>
@@ -127,8 +127,8 @@
                         		<th>Total</th>
                         	</tr>
                         	<tr>
-                        		<td class="span1"><a href='javascript:;'><img src='http://placehold.it/50x50&text=Image+A' /></a></td>
-                        		<td class="span5">
+                        		<td class="span1"><a href='javascript:;'><img height='70' width='70'   src='https://c7.staticflickr.com/3/2154/2264556662_cbc3f09362_b.jpg' /></a></td>
+                        		<td class="span5"> 
                         			<a href='javascript:;'>Product A</a>
 
                         		</td>
@@ -145,47 +145,10 @@
                         		</td>
                         		<td class="span1">$12.99</td>
                         	</tr>
-                        	<tr>
-                        		<td class="span1"><a href='javascript:;'><img src='http://placehold.it/50x50&text=Image+B' /></a></td>
-                        		<td class="span5">
-                        			<a href='javascript:;'>Product B</a>
-
-                        		</td>
-                        		<td class="span2">$22.17</td>
-                        		<td class="span2">
-                        			<div class="row-fluid">
-                        				<div class="span7">
-                        					<input type="text" id="name" value="1" placeholder="Qnt." class="input-mini">
-                        				</div>
-                        				<div class="span5">
-                        					<button type="submit" class="btn btn-danger btn-mini"><i class="icon-remove icon-white"></i></button>
-                        				</div>
-                        			</div>
-                        		</td>
-                        		<td class="span1">$22.17</td>
-                        	</tr>
-                        	<tr>
-                        		<td class="span1"><a href='javascript:;'><img src='http://placehold.it/50x50&text=Image+C' /></a></td>
-                        		<td class="span5">
-                        			<a href='javascript:;'>Product C</a>
-
-                        		</td>
-                        		<td class="span2">$59.18</td>
-                        		<td class="span2">
-                        			<div class="row-fluid">
-                        				<div class="span7">
-                        					<input type="text" id="name" value="1" placeholder="Qnt." class="input-mini">
-                        				</div>
-                        				<div class="span5">
-                        					<button type="submit" class="btn btn-danger btn-mini"><i class="icon-remove icon-white"></i></button>
-                        				</div>
-                        			</div>
-                        		</td>
-                        		<td class="span1">$59.18</td>
-                        	</tr>
+                        	
                         	<tr>
                         		<th colspan="4"></th>
-                        		<th>$658.00</th>
+                        		<th>$12.99</th>
                         	</tr>
                         </table>
                         <hr />

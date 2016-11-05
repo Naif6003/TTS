@@ -89,7 +89,6 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 align="left" class=" section-heading"> Login </h2>
-                    <h3 align="left" class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
             </div>
             <div class="row">
@@ -98,28 +97,31 @@
                 
                 
                     <form  action="TheLogin" method="post" >
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input  name="name" type="text" class="form-control" placeholder="Your Name *" id="name"  required  data-validation-required-message="Please enter your name.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input name="password" type="password" class="form-control" placeholder="Your password *" id="password" required data-validation-required-message="Please enter your phone number.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">submit</button>
-                            </div>
-                        </div>
-                    </form>
+                       <div class="row">
+                           <div class="col-md-6">
+                               <div class="form-group">
+                               <label style="font-family:Courier; color:White; font-size: 30px;">Name </label>
+                                   <input  name="name" type="text" class="form-control" placeholder="Your Name *" id="name"  required  data-validation-required-message="Please enter your name.">
+                                   <p class="help-block text-danger"></p>
+                               </div>
+                               <div class="form-group">
+                                <label style="font-family:Courier; color:White; font-size: 30px;" >Email </label>
+                                   <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                   <p class="help-block text-danger"></p>
+                               </div>  
+                               <label style="font-family:Courier; color:White; font-size: 30px;" >Password</label> 
+                               <div class="form-group">
+                                   <input name="password" type="password" class="form-control" placeholder="Your password *" id="password" required data-validation-required-message="Please enter your phone number.">
+                                   <p class="help-block text-danger"></p>
+                               </div>
+                           </div>
+                           <div class="clearfix"></div>
+                           <div class="col-lg-12 text-center">
+                               <div id="success"></div>
+                               <button type="submit" class="btn btn-xl">submit</button>
+                           </div>
+                       </div>
+                   </form>
                     
                     
                     

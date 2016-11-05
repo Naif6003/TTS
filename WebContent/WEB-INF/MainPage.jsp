@@ -63,7 +63,7 @@
                         <a class="page-click" href="Trade">Trade</a>
                     </li>
                     <li>
-                        <a class="page-click" href="Buying_selling">Buy, Sell</a>
+                        <a class="page-click" href="BuySell">Buy, Sell</a>
                     </li>
                     <li>
                         <a class="page-click" href="About">About</a>

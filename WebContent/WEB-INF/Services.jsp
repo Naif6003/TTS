@@ -61,7 +61,7 @@
                         <a class="page-click" href="Trade">Trade</a>
                     </li>
                     <li>
-                        <a class="page-click" href="Buying_selling">Buy, Sell</a>
+                        <a class="page-click" href="BuySell">Buy, Sell</a>
                     </li>
                     <li>
                         <a class="page-click" href="About">About</a>
@@ -88,24 +88,6 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
-    <%-- <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-            <c:choose>
-            <c:when test="${sessionScope.foundUser}"> 
-                <div class="intro-lead-in">Hello ${sessionScope.username}! We are</div>
-                </c:when>
-                <c:otherwise>
-                <div class="intro-lead-in">Hello there! We are</div>
-                </c:otherwise>
-                </c:choose>
-                <div class="intro-heading">Trusted Trading Services</div>
-                <a href="Services" class="page-click btn btn-xl">Tell Me More</a>
-            </div>
-        </div>
-    </header> --%>
 
 	
 	

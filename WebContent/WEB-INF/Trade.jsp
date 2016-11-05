@@ -140,6 +140,7 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
+<<<<<<< HEAD
                                 <h2>Item number ${loop.index}</h2>
                                 <p class="item-intro text-muted">Great choice, this item is amazing.</p>
                                 <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
@@ -150,6 +151,18 @@
                                    
                                    <ul class="list-inline">
                                     <li>Date: Nov 5, 2016</li>
+=======
+                                <h2>${item.itemName}</h2>
+                                <p class="item-intro text-muted">Great choice, this item is amazing.</p>
+                                <img class="img-responsive img-centered" src="bootstrap/img/portfolio/${item.itemName}.png" alt="">
+                                <p>You can guarantee the quality of all items that are up as a trade item, as we have verified the quality of the item at our warehouse.
+                                Our warehouse checks the quality of the items and if they deem the item to be in a poor state, they return the item back to the user. 
+                                Feel free to trade your hearts out!</p>
+                                <p>
+                                    <strong>Description of Item</strong> ${item.itemDescription}</p>
+                                <ul class="list-inline">
+                                    <li>Date: July 2014</li>
+>>>>>>> origin/master
                                     <li>Owner: ${item.user.userName}</li>
                                     <li>Category: ${item.itemName}</li>
                                 </ul>

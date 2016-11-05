@@ -105,7 +105,8 @@
              	 <div class="caption">
       			<h3>${item.itemName}</h3>
       			<p>${item.itemDescription}</p>
-      			<p><a href="Checkout" class="btn btn-primary">Add To Cart</a> <a href="ViewItem?id=${item.itemId}" class="btn">View</a></p>
+      			<p><a href="Checkout" class="btn btn-primary">Add To Cart</a> 
+      			<a href="ViewItem?id=${item.itemId}" class="btn">View</a></p>
             </div>
             </div>
           </li>

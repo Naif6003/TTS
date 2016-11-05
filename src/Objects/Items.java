@@ -28,19 +28,7 @@ public class Items {
 		this.itemDescription = itemDescription;
 		this.itemPhoto = itemPhoto;
 	}
-	
-	 public User getUser() {
-			return user;
-		}
-		public void setUser(User user) {
-			this.user = user;
-		}
-		public int getUserId() {
-			return userId;
-		}
-		public void setUserId(int userId) {
-			this.userId = userId;
-		}
+
 		public String getItemPhoto() {
 			return itemPhoto;
 		}

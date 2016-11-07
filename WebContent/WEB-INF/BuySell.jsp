@@ -67,9 +67,6 @@
                         <a class="page-click" href="ShoppingCart">Shopping Cart</a>
                     </li>
                     <li>
-                        <a class="page-click" href="Buying_selling">Buy, Sell</a>
-                    </li>
-                    <li>
                         <a class="page-click" href="About">About</a>
                     </li>
                     <li>

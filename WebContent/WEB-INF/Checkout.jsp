@@ -92,7 +92,6 @@
  <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Hello There! We are</div>
                 <div class="intro-heading">Trusted Trading Services</div>
             </div>
         </div>

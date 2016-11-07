@@ -95,6 +95,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Shopping Cart</h2>
+                  <h3 class="section-subheading text-muted"><a href="Checkout">Checkout</a></h3>
                     <h3 class="section-subheading text-muted">Items within your cart</h3>
                 </div>
             </div>
